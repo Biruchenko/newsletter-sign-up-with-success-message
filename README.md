@@ -12,6 +12,8 @@ A responsive newsletter sign-up form with client-side validation and a success m
 
 ### Links
 
+- https://biruchenko.github.io/newsletter-sign-up-with-success-message/
+
 ## Features
 
 - Responsive layout (mobile and desktop)
