@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+		<link rel="stylesheet" href="./styles/styles.css">
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 class="sr-only">Newsletter sign-up form with success message</h1>
+			</header>
+			<main>
+				<!-- Sign-up form start -->
+				<div class="card">
+					<div class="card__container container">
+						<div class="card__inner box">
+							<div class="card__body">
+								<h2 class="card__title title">
+									Stay updated!
+								</h2>
+								<div class="card__text">
+									<p>
+										Join 60,000+ product managers receiving monthly updates on:
+									</p>
+								</div>
+								<ul class="card__list">
+									<li class="card__item">
+										Product discovery and building what matters
+									</li>
+									<li class="card__item">
+										Measuring to ensure updates are a success
+									</li>
+									<li class="card__item">
+										And much more!
+									</li>
+								</ul>
+								<form class="card__form form" id="form" novalidate>
+									<label for="email" class="form__label">
+										Email address
+										<input type="email" class="form__input input" id="email" required aria-describedby="email-validation" placeholder="email@company.com">
+										<span id="email-validation" class="form__validation-message">Valid email required</span>
+									</label>
+									<button type="submit" class="form__button button">Subscribe to monthly newsletter</button>
+								</form>
+							</div>
+							<picture class="card__image">
+								<source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 61.9375rem)">
+								<source srcset="assets/images/illustration-sign-up-tablet.svg" media="(min-width: 23.4988rem)">
+								<img src="assets/images/illustration-sign-up-mobile.svg" alt="Illustration of sign up">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<!-- Sign-up form end -->
+				<!-- Success message start -->
+				<div class="success hidden">
+					<div class="success__container container">
+						<div class="success__inner box">
+							<figure class="success__icon">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="32" cy="32" r="32" fill="url(#paint0_linear_2073_1557)" />
+									<path d="M16 34.3046L24.3341 42.2857L43.4286 24" stroke="white" stroke-width="4" />
+									<defs>
+										<lineargradient id="paint0_linear_2073_1557" x1="0" y1="32" x2="64" y2="32" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#FF6A3A" />
+											<stop offset="1" stop-color="#FF527B" />
+										</lineargradient>
+									</defs>
+								</svg>
+							</figure>
+							<h2 class="success__title title">
+								Thanks for subscribing!
+							</h2>
+							<div class="success__text">
+								<p>
+									A confirmation email has been sent to <a href="#" class="success__text-link" target="_blank"></a>. Please open it and click the button inside to confirm your subscription.
+								</p>
+							</div>
+							<button class="success__button button">Dismiss message</button>
+						</div>
+					</div>
+				</div>
+				<!-- Success message end -->
+			</main>
+			<footer>
+				<div class="attribution">
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+/* === Container === */
+.container {
+  margin: auto;
+}
+
+/* === Hidden section === */
+.hidden {
+  display: none;
+}
+
+/* === Box === */
+.box {
+  background-color: var(--white-color);
+  color: var(--blue-800-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* === Button === */
+.button {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--blue-800-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: var(--white-color);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.button:hover, .button:focus, .button.active {
+  background: var(--gradient-4-color);
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--grey-color);
+  color: var(--blue-800-color);
+}
+.input::-webkit-input-placeholder {
+  color: var(--grey-color);
+}
+.input::-moz-placeholder {
+  color: var(--grey-color);
+}
+.input:-ms-input-placeholder {
+  color: var(--grey-color);
+}
+.input::-ms-input-placeholder {
+  color: var(--grey-color);
+}
+.input::placeholder {
+  color: var(--grey-color);
+}
+
+/* === Title === */
+.title {
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* === Media Queries === */
+@media (width > 23.4375rem) {
+  .container {
+    padding: 0.9375rem;
+  }
+  .box {
+    border-radius: 2.25rem;
+  }
+}
+@media (width > 48rem) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 48rem) {
+  .title {
+    font-size: clamp(2.5rem, 1.546rem + 4.07vw, 3.5rem);
+  }
+}

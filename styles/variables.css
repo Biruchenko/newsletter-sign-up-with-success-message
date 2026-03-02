@@ -1,0 +1,12 @@
+:root {
+  /* === Colors === */
+  --white-color: #fff;
+  --grey-color: #949494;
+  --blue-800-color: #242742;
+  --blue-700-color: #36384d;
+  --red-color: #ff6155;
+  --red-100-color: #ffe7e6;
+  --gradient-4-color: linear-gradient(90deg, #ff6a3a 0%, #ff527b 100%);
+  /* === Typography === */
+  --font-main: "Roboto", sans-serif;
+}
